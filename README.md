@@ -1,10 +1,14 @@
 'n- add / healthz note
 ##run (window PowerShell)
-#1) °¡»óÈ¯°æ È°¼ºÈ­ 
+<br>
+#1) ê°€ìƒí™˜ê²½ í™œì„±í™” 
 py -m venv . venv 
 . .\.\venv\scripts\Activate.ps1
-#2) ÆĞÅ°Áö ¼³Ä¡
+<br>
+#2) íŒ¨í‚¤ì§€ ì„¤ì¹˜
 pip install -r requirements.txt
-#3) ¼­¹ö ½ÇÇà
+<br>
+#3) ì„œë²„ ì‹¤í–‰
 uvicorn app.main:app --reload
-# ºê¶ó¿ìÀú https:127.0.0.1:8000/healthz -> {"status":"oK"}
+<br>
+# ë¸Œë¼ìš°ì € https:127.0.0.1:8000/healthz -> {"status":"oK"}
